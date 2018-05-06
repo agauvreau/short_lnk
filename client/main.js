@@ -7,12 +7,14 @@ import { Switch, Route } from 'react-router';
 import Signup from '../imports/ui/Signup';
 import Link from '../imports/ui/Link';
 import NotFound from '../imports/ui/NotFound';
+import Login from '../imports/ui/Login';
 
 const routes = (
   <BrowserRouter history={browserHistory}>
     <Switch>
       <Route exact path="/signup" component={Signup}/>
       <Route exact path="/links" component={Link}/>
+      <Route exact path="/" component={Login}/>
       <Route component={NotFound}/>
     </Switch>
   </BrowserRouter>
